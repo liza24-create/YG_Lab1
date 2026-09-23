@@ -1,6 +1,8 @@
 package com.example.yg_lab1;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,10 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    public void onClick(View view) {
+        TextView tvMain = findViewById(R.id.tvMain);
+        tvMain.setText("Hello everyone to my first app!");
     }
 }
