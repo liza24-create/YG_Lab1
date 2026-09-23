@@ -1,5 +1,6 @@
 package com.example.yg_lab1;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -27,5 +28,10 @@ public class MainActivity extends AppCompatActivity {
     public void onClick(View view) {
         TextView tvMain = findViewById(R.id.tvMain);
         tvMain.setText("Hello everyone to my first app!");
+    }
+
+    public void onChangeColorClick(View view) {
+        TextView tvMain = findViewById(R.id.tvMain);
+        tvMain.setTextColor(Color.RED);
     }
 }
